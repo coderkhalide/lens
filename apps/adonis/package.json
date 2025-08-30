@@ -1,13 +1,13 @@
 {
   "name": "example-adonis",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node bin/server.js",
-    "build": "node ace build",
-    "dev": "node ace serve --hmr",
+    "start": "node api.js && node bin/server.js",
+    "build": "node api.js && node ace build",
+    "dev": "node api.js && node ace serve --hmr",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",

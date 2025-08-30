@@ -1,6 +1,6 @@
 {
   "name": "@lensjs/watchers",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Watcher handlers for Lens",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -18,7 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup --clean"
+    "build": "node api.js && tsup --clean"
   },
   "devDependencies": {
     "@lensjs/typescript-config": "workspace:*",

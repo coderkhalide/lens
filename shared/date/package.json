@@ -1,6 +1,6 @@
 {
   "name": "@lensjs/date",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Date Utils package for lensjs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup --clean"
+    "build": "node api.js && tsup --clean"
   },
   "devDependencies": {
     "@lensjs/typescript-config": "workspace:*",
