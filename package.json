@@ -28,8 +28,10 @@
   },
   "homepage": "https://github.com/lensjs/lens#readme",
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "node init && turbo build",
+    "dev": "node init && turbo dev",
+    "patch": "pnpm -r exec npm version patch",
+    "publish": "pnpm publish -r --no-git-checks",
     "prepare": "husky"
   }
 }
