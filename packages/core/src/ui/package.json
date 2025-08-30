@@ -1,10 +1,10 @@
 {
   "name": "ui",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "scripts": {
-    "dev": "cross-env VITE_API_URL=http://localhost:3000 vite",
+    "dev": "node api.js && cross-env VITE_API_URL=http://localhost:3000 vite",
     "prod": "cross-env VITE_API_URL='' tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

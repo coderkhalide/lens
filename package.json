@@ -29,7 +29,9 @@
   "homepage": "https://github.com/lensjs/lens#readme",
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "node api.js && turbo dev",
+    "patch": "pnpm -r exec npm version patch",
+    "publish": "pnpm publish -r --no-git-checks",
     "prepare": "husky"
   }
 }

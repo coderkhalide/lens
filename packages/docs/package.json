@@ -1,9 +1,9 @@
 {
   "name": "docs",
   "private": true,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "node api.js && vitepress dev",
     "build": "npx vitepress build",
     "preview": "vitepress preview"
   },
